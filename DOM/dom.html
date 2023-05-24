@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(12, 112, 242);
+            color: white;
+        }
+        div{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body id="principal">
+    <div>
+        <h1>Aprendendo sobre DOM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac vulputate sapien. Praesent egestas quam vel ultricies consequat. In in porta nunc. Praesent aliquet tellus vitae euismod maximus. Aenean sed tincidunt odio, eget dignissim nisi. Nulla facilisi. Phasellus nec mi mauris. Mauris a mi et nunc placerat posuere vel nec massa. Donec fringilla est quis erat consectetur congue.</p>
+        <button>Clique aqui!</button>
+        <button>Clique aqui!</button>
+    </div>
+    <script>
+        //window.document.write("Teste");
+        //window.alert("Teste");
+        /*var x = window.document.getElementById("principal");
+        x.style.background = 'black';*/
+        var y = window.document.getElementsByTagName('button')[0];
+        y.innerHTML = 'NOVO';
+    </script>
+</body>
+</html>

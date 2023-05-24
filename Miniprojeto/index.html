@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/84165a5e83.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Controle de Produtos</title>
+    </head>
+    <body>
+        <header>
+        <img id="logotipo" src="./img/logotipo_dnc_principal_branco.png" alt="" />
+        <h1>Controle de Produtos</h1>
+        </header>
+        <main>
+        <h2>Produtos</h2>
+        <span> Lista de Produtos </span>
+        <div class="card">
+            <div class="input_produto">
+                <label for="nome_produto">Nome do Produto: </label>
+                <input type="text" name="nome_produto" id="nome_produto" placeholder="Iphone X">
+            </div>
+            <div class="input_produto">
+                <label for="preco_produto">Preço: </label>
+                <input type="text" name="preco_produto" id="preco_produto" placeholder="R$ 00.00">
+            </div>
+            <button onclick="produto.Adicionar()"> Adicionar </button>
+            <button onclick="produto.limparCampos()"> Cancelar </button>
+        </div>
+        <div class="conteudo">
+            <table border="1">
+                <thead>
+                    <th> ID </th>
+                    <th> Produto </th>
+                    <th> Preço </th>
+                    <th> Remover </th>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+        </main>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
